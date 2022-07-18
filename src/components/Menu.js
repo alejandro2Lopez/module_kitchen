@@ -1,9 +1,13 @@
 import React from "react";
+import LoginForm from "./LoginForm";
+import Order from "./Order";
 
 const Menu = () => {
     return(
-    <h1>prueba</h1>
-
+        <div>  
+            <Order />
+            {/*<LoginForm/>*/}
+        </div>                    
     )
 
 }

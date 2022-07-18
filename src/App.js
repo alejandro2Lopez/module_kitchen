@@ -1,19 +1,20 @@
-import {BrowserRouter as Router, Redirect, Route, Switch, Link, useNavigate} from "react-router-dom";
 import './App.css';
 import LoginForm from './components/LoginForm';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Menu from "./components/Menu";
+import Order from './components/Order';
 
 function App() {
- 
-  return (
-    <div className="App">
-      <header className="App-header">       
-      
-      <div >      
-      <LoginForm/>
-      </div>
+  
 
-      </header>
-    </div>
+  return (
+    <Router>
+      <Routes>
+        <Route path='/' element={ <LoginForm/>} />
+        <Route path='/menu' element={<Menu/>} />
+        <Route path='*' element={<div>404 Not Found</div>} />
+      </Routes>
+    </Router>
   );
 }
 
