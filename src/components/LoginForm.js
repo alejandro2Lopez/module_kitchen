@@ -29,7 +29,7 @@ function LoginForm() {
         try {
             console.log("Working on it")
             postFetch("api/users", {name: name, password: password}).then(val =>{
-                if (val.isValidate.isValidate == true) {
+                if (val.isValidate.isValidate === true) {
                     sessionStorage.setItem("UserName", name);
                     redirect();
                 } else {
@@ -47,13 +47,11 @@ function LoginForm() {
     }
 
     return(
-        <div className="App">
-            <header className="App-header"
-            img src={Background}>
-
-
+        <body className="App">
+            <header className="App-header" >
+            <div></div>
                 <div className="Form-box">
-                <img src={Login_1}  width="225px"/>
+                <img src={Login_1}  width="255px"/>
                 <h3 className="Form-Text">Login</h3>
                 <form onSubmit={handleSubmit}>
                 <input 
@@ -77,7 +75,7 @@ function LoginForm() {
                 <button                   
                     type="submit" 
                     className="Form-Buttom"
-                >Crear</button>                        
+                >Entrar</button>                   
                 </form>
 
                {/* <button onClick={redirect}
@@ -86,7 +84,7 @@ function LoginForm() {
                 </div>
         
             </header>        
-        </div>
+        </body>
 
 
 
