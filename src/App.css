@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: url("https://media.gq.com.mx/photos/5c927b45c0e463f033a84935/16:9/w_2560%2Cc_limit/restaurante.jpg");
+  background-size: cover;
 }
 
 .App-logo {
@@ -13,19 +15,72 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header {  
+  background: url("https://media.gq.com.mx/photos/5c927b45c0e463f033a84935/16:9/w_2560%2Cc_limit/restaurante.jpg");
+  background-size: cover;  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(10px + 2vmin);  
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Form-box {
+  box-sizing: border-box;
+  margin: 25;
+  padding: 125px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 30px 36px 0 rgba(0,0,0,0.24),0 27px 70px 0 rgba(0,0,0,0.19);
+
+}
+
+.Form-Login {
+  color: #304c89;  
+  background-color: #e8e5da;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.Form-Buttom {
+  background-color: #ba5a31;
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.Form-Text {  
+  color: #ba5a31;
+  text-align: center;
+  border: 10px;
+  border-color: black;
+}
+
+.Menu-App {
+  background-color: #e8e5da;
+  text-align: center;
+}
+
+
+.Form-Sign {
+  text-align: left;
+}
+
+.Body {
+  background: url();
 }
 
 @keyframes App-logo-spin {

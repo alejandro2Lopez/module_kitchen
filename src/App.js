@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import LoginForm from './components/LoginForm';
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Menu from "./components/Menu";
+import Order from './components/Order';
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={ <LoginForm/>} />
+        <Route path='/menu' element={<Menu/>} />
+        <Route path='*' element={<div>404 Not Found</div>} />
+      </Routes>
+    </Router>
   );
 }
 
