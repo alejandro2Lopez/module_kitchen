@@ -4,7 +4,7 @@ import Order from "./Order";
 
 const Menu = () => {
     return(
-        <div>  
+        <div className="Menu-App">  
             <Order />
             {/*<LoginForm/>*/}
         </div>                    
